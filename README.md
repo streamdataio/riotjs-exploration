@@ -1,6 +1,6 @@
-# riotjs-explore
+# Exploring Riot.js
 
-This project aims to explore [Riot.js](https://muut.com/riotjs/) a powerful micro-library with custom-tags, eventing and routing.
+Welcome to this project which aims to explore [Riot.js](https://muut.com/riotjs/) a powerful micro-library with **custom-tags**, **eventing** and **routing**.
 
 Most of the code is related to the blog posts series [« Exploring Riot.js »](http://streamdata.io/blog/tag/riot/).
 
