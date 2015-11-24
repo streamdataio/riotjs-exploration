@@ -3,7 +3,7 @@
 class StockMarketService {
   constructor(appToken, bus) {
     var self = this;
-    var url = "http://demo-streamdataio.rhcloud.com/stockmarket/prices";
+    var url = "http://stockmarket.streamdata.io/prices";
 
     this.bus = bus;
     this.streamdata =
