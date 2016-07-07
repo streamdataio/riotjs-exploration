@@ -5,7 +5,7 @@
   <button class="myButton" onclick="{ sayHello }">{opts.title}</button>
   <h4>{message}</h4>
 
-  <script type='text/es6'>
+  <script type='babel'>
     // <script> tag is required if we provide style too
     this.message = '';
 

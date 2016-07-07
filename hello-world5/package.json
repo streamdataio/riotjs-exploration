@@ -1,12 +1,12 @@
 {
   "name": "hello-world5",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "riot.js Hello Word sample with npm and es6",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist/",
-    "watch": "riot --type es6 -w app dist",
-    "compile": "riot --type es6 app dist",
+    "watch": "riot --type babel -w app dist",
+    "compile": "riot --type babel app dist",
     "browsersync": "browser-sync start --server --files 'dist/*.js, app/*.html' --startPath app",
     "serve": "parallelshell 'npm run watch' 'npm run browsersync'",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,12 +18,16 @@
   "author": "ctranxuan (streamdata.io)",
   "license": "Apache2 License (http://www.apache.org/licenses/LICENSE-2.0)",
   "dependencies": {
-    "riot": "^2.2.3"
+    "babel-core": "6.10.4",
+    "babel-preset-stage-2": "6.11.0",
+    "babel-preset-stage-0": "6.5.0",
+    "babel-preset-es2015-riot": "1.1.0",
+    "riot": "2.5.0"
   },
   "devDependencies": {
-    "babel": "^5.8.21",
-    "browser-sync": "^2.8.2",
-    "parallelshell": "^2.0.0",
-    "rimraf": "^2.4.2"
+    "babel-plugin-external-helpers-2": "6.3.13",
+    "browser-sync": "2.13.0",
+    "parallelshell": "2.0.0",
+    "rimraf": "2.5.3"
   }
 }
